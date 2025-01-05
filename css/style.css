@@ -463,3 +463,40 @@ header {
     color: var(--white);
   }
   
+  /* RECENT PROJECTS */
+  
+.portfolio {
+    background-color: var(--extra-light);
+  }
+  
+  .portfolio__nav {
+    margin-block: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .portfolio__nav .btn {
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    background-color: transparent;
+    border: none;
+  }
+  
+  .portfolio__nav .btn.mixitup-control-active {
+    color: var(--primary-color);
+  }
+  
+  .portfolio__grid {
+    display: grid;
+    gap: 1rem;
+  }
+  
+  .portfolio__card img {
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
