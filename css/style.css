@@ -499,4 +499,221 @@ header {
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   }
+
+  .banner__container {
+    display: grid;
+    gap: 2rem;
+    background: url("images/banner-bg.png"), var(--primary-color);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
   
+  .banner__content {
+    padding-block: 5rem 0;
+    padding-inline: 1rem;
+  }
+  
+  .banner__content .section__header {
+    margin-bottom: 1rem;
+    color: var(--white);
+  }
+  
+  .banner__content p {
+    margin-bottom: 1rem;
+    color: var(--white);
+    line-height: 1.75rem;
+    text-align: center;
+  }
+  
+  .banner__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .banner__btn .btn {
+    color: var(--primary-color);
+    background-color: var(--white);
+  }
+  
+  .banner__image {
+    position: relative;
+    isolation: isolate;
+    height: 100%;
+  }
+
+
+
+
+
+
+/*   
+@media (width > 540px) {
+    .choose__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .journey__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .service__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .portfolio__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .blog__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (width > 768px) {
+    nav {
+      position: static;
+      padding: 2rem 1rem;
+      max-width: var(--max-width);
+      margin-inline: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+  
+    .nav__header {
+      flex: 1;
+      padding: 0;
+      background-color: transparent;
+    }
+  
+    .nav__logo a {
+      font-size: 1.5rem;
+      color: var(--secondary-color);
+    }
+  
+    .nav__logo a span {
+      color: var(--primary-color);
+    }
+  
+    .nav__menu__btn {
+      display: none;
+    }
+  
+    .nav__links {
+      position: static;
+      width: fit-content;
+      padding: 0;
+      flex-direction: row;
+      background-color: transparent;
+      transform: none !important;
+    }
+  
+    .nav__links a {
+      color: var(--secondary-color);
+    }
+  
+    .nav__links a:hover {
+      color: var(--primary-color);
+    }
+  
+    .nav__btns {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+    }
+  
+    .header__container {
+      padding-block: 0;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+    }
+  
+    .header__content :is(h2, h1, h3, p) {
+      text-align: left;
+    }
+  
+    .header__btns {
+      justify-content: flex-start;
+    }
+  
+    .intro__container {
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+    }
+  
+    .intro__grid {
+      gap: 0.5rem 2rem;
+    }
+  
+    .choose__grid {
+      gap: 1rem 4rem;
+    }
+  
+    .journey__grid {
+      gap: 2rem 4rem;
+    }
+  
+    .service__grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .portfolio__grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .banner__container {
+      grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, calc(var(--max-width) / 2))
+        minmax(0, calc(var(--max-width) / 2))
+        minmax(0, 1fr);
+      align-items: center;
+    }
+  
+    .banner__content {
+      padding-block: 5rem;
+      grid-column: 2/3;
+    }
+  
+    .banner__content :is(.section__header, p) {
+      text-align: left;
+    }
+  
+    .banner__btn {
+      justify-content: flex-start;
+    }
+  
+    .banner__image {
+      grid-column: 3/5;
+      overflow: hidden;
+    }
+  
+    .banner__image img {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: unset;
+      height: 100%;
+    }
+  
+    .blog__grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (width > 1024px) {
+    .service__grid {
+      gap: 4rem 1.5rem;
+    }
+  
+    .portfolio__grid {
+      gap: 1.5em;
+    }
+  
+    .blog__grid {
+      gap: 1.5rem;
+    }
+  } */
