@@ -429,12 +429,6 @@ header {
   color: #0c0a5d;
 }
 
-.service-text {
-  font-size: 2em;
-  font-weight: bold;
- color:#ff9442;
-}
-
 .small-container {
   max-width: 1080px;
   margin: auto;
@@ -794,9 +788,6 @@ header {
     gap: 4rem 1.5rem;
   }
 
-  .project-card {
-    gap: 4rem 1.5rem;
-  }
 
 }
 
@@ -819,13 +810,14 @@ header {
   flex-wrap: wrap;
   gap: 30px; /* Spacing between cards */
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 /* Styling for individual project cards */
 .project-card {
   background: #fff;
   border-radius: 12px;
+  border: 1px solid #0c0a5d;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: calc(33.333% - 30px); /* 3 cards per row with space in between */
   box-sizing: border-box;
@@ -862,6 +854,10 @@ header {
   color: #666;
   line-height: 1.5;
   margin-bottom: 15px;
+}
+
+.project-info .tags{
+  color: #ff9442;
 }
 
 /* See More button styling */
@@ -930,6 +926,7 @@ header {
 
 .contact{
   background: #f5f6f8;
+  padding-top: 60px;
 }
 
 .contact h2{
@@ -1008,4 +1005,37 @@ select:focus {
   .contact form textarea {
     height: 150px; /* Adjust textarea height */
   }
+}
+
+
+.about-section {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.about-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #000;
+  /* margin-bottom: 10px; */
+}
+
+.title-underline {
+  position: relative;
+  width: 100px;
+  /* font-family: 'raleway'; */
+  height: 2px;
+  background-color: #f18724; /* Orange color */
+  margin: 0 auto;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  background-color: #f18724; /* Orange color */
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
