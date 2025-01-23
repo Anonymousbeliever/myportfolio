@@ -927,3 +927,85 @@ header {
     font-size: 1rem; /* Adjust font size */
   }
 }
+
+.contact{
+  background: #f5f6f8;
+}
+
+.contact h2{
+  margin-bottom: 3rem;
+}
+
+.contact form{
+  width: 700px;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact form .input-box{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea{
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: .8rem;
+  border: none;
+  margin: .7rem 0;
+  box-shadow: 0 .1rem .5rem rgba(0, 0, 0, .2);
+}
+
+.contact form .input-box input{
+  width: 49%;
+}
+
+.contact form textarea{
+  resize: none;
+}
+
+.contact form .btn{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+input:focus, 
+textarea:focus, 
+select:focus {
+  outline: none; /* Removes the default browser focus outline */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .contact form {
+    width: 90%; /* Adjust width to fit smaller screens */
+  }
+
+  .contact form .input-box {
+    flex-direction: column; /* Stack inputs vertically */
+  }
+
+  .contact form .input-box input {
+    width: 100%; /* Full width inputs on smaller screens */
+  }
+}
+
+/* Further adjustments for mobile screens */
+@media (max-width: 480px) {
+  .contact {
+    padding: 20px; /* Reduce padding for smaller screens */
+  }
+
+  .contact h2 {
+    font-size: 1.5rem; /* Reduce font size for better readability */
+  }
+
+  .contact form textarea {
+    height: 150px; /* Adjust textarea height */
+  }
+}
