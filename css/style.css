@@ -568,7 +568,7 @@ header {
 
 .key-service .col-3 img {
   width: 50px;
-
+  margin-left: 100px;
 }
 
 .key-service .col-3:hover {
