@@ -1,3 +1,9 @@
+window.addEventListener("load", function () {
+  const loader = document.getElementById("loader");
+  loader.style.display = "none";
+});
+
+
 const menuBtn = document.getElementById("menu-btn");
 const navLinks = document.getElementById("nav-links");
 const menuBtnIcon = menuBtn.querySelector("i");
@@ -26,23 +32,23 @@ ScrollReveal().reveal(".header__image img", {
 });
 ScrollReveal().reveal(".header__content h2", {
   ...scrollRevealOption,
-  delay: 500,
+  delay: 1000,
 });
 ScrollReveal().reveal(".header__content h1", {
   ...scrollRevealOption,
-  delay: 1000,
+  delay: 1500,
 });
 ScrollReveal().reveal(".header__content h3", {
   ...scrollRevealOption,
-  delay: 1500,
+  delay: 2000,
 });
 ScrollReveal().reveal(".header__content p", {
   ...scrollRevealOption,
-  delay: 2000,
+  delay: 2500,
 });
 ScrollReveal().reveal(".header__btns", {
   ...scrollRevealOption,
-  delay: 2500,
+  delay: 3000,
 });
 
 ScrollReveal().reveal(".intro__image", {

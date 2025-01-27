@@ -10,6 +10,12 @@
             box-sizing: border-box;
         }
 
+        html, body {
+            overflow-x: hidden;
+            width: 100%;
+            font-family: Arial, sans-serif;
+        }
+
         .navbar {
             position: sticky;
             top: 0;
@@ -21,15 +27,15 @@
             backdrop-filter: blur(5px);
             box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
             z-index: 1000;
+            width: 100%;
         }
 
         .logo {
-            display: flex;
-            align-items: center;
             font-size: 1.25rem;
             font-weight: 600;
             color: #1a1a1a;
             text-decoration: none;
+            z-index: 1001;
         }
 
         .nav-links {
@@ -63,56 +69,65 @@
             font-weight: 500;
         }
 
-        .menu-btn {
-            display: none;
-            font-size: 1.5rem;
-            cursor: pointer;
-            background: none;
-            border: none;
-        }
-
         /* Responsive Styles */
         @media (max-width: 768px) {
-            .menu-btn {
-                display: block;
-            }
 
             .nav-links {
                 position: fixed;
                 top: 0;
                 right: -100%;
-                width: 70%;
-                height: 100%;
-                background-color: rgba(255, 255, 255, 0.95);
-                box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+                width: 100%;
+                height: 100vh;
+                background-color: white;
                 flex-direction: column;
-                align-items: flex-start;
-                padding: 2rem;
-                gap: 1.5rem;
-                transition: right 0.3s ease;
+                justify-content: flex-start;
+                padding-top: 5rem;
+                gap: 2rem;
+                transition: right 0.3s ease-in-out;
+                z-index: 1000;
             }
 
             .nav-links.active {
                 right: 0;
             }
 
-            .close-btn {
+            .nav-links a {
+                font-size: 1rem;
+                padding: 0.5rem 2rem;
+                width: 100%;
+            }
+
+            .auth-buttons {
+                display: none;
+            }
+
+            .hamburger, .close {
                 display: block;
-                font-size: 1.5rem;
-                align-self: flex-end;
                 cursor: pointer;
+                font-size: 1.5rem;
+            }
+
+            .close {
+                display: none;
+                position: absolute;
+                top: 1rem;
+                right: 2rem;
+            }
+
+            .nav-links.active .close {
+                display: block;
+            }
+
+            .nav-links.active .hamburger {
+                display: none;
             }
         }
     </style>
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <a href="#" class="logo">GitBook</a>
-
-        <button class="menu-btn" id="menu-btn">&#9776;</button>
-
         <div class="nav-links" id="nav-links">
-            <button class="close-btn" id="close-btn">&times;</button>
             <a href="#">Solutions</a>
             <a href="#">Integrations</a>
             <a href="#">Resources</a>
@@ -123,18 +138,21 @@
         <div class="auth-buttons">
             <a href="#" class="login-btn">0706128329</a>
         </div>
+
+        <div class="hamburger" id="hamburger">☰</div>
+        <div class="close" id="close">×</div>
     </nav>
 
     <script>
-        const menuBtn = document.getElementById('menu-btn');
-        const closeBtn = document.getElementById('close-btn');
+        const hamburger = document.getElementById('hamburger');
+        const close = document.getElementById('close');
         const navLinks = document.getElementById('nav-links');
 
-        menuBtn.addEventListener('click', () => {
+        hamburger.addEventListener('click', () => {
             navLinks.classList.add('active');
         });
 
-        closeBtn.addEventListener('click', () => {
+        close.addEventListener('click', () => {
             navLinks.classList.remove('active');
         });
     </script>
