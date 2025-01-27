@@ -1,160 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #2f2f2f;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
 
-        html, body {
-            overflow-x: hidden;
-            width: 100%;
-            font-family: Arial, sans-serif;
-        }
+.skills-section {
+    padding: 50px 20px;
+}
 
-        .navbar {
-            position: sticky;
-            top: 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 2rem;
-            background-color: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(5px);
-            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-            z-index: 1000;
-            width: 100%;
-        }
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    position: relative;
+}
 
-        .logo {
-            font-size: 1.25rem;
-            font-weight: 600;
-            color: #1a1a1a;
-            text-decoration: none;
-            z-index: 1001;
-        }
+.section-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #28a745;
+    margin: 10px auto 0;
+}
 
-        .nav-links {
-            display: flex;
-            align-items: center;
-            gap: 2rem;
-        }
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
 
-        .nav-links a {
-            color: #4d4d4d;
-            text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 500;
-            transition: color 0.2s ease;
-        }
+.skill-card {
+    background: #3b3b3b;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
 
-        .nav-links a:hover {
-            color: #1a1a1a;
-        }
+.skill-card:hover {
+    transform: translateY(-10px);
+}
 
-        .auth-buttons {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
+.skill-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 15px;
+}
 
-        .login-btn {
-            color: #4d4d4d;
-            text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 500;
-        }
+.skill-card h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
 
-        /* Responsive Styles */
-        @media (max-width: 768px) {
+.skill-card p {
+    font-size: 1rem;
+    color: #bfbfbf;
+}
 
-            .nav-links {
-                position: fixed;
-                top: 0;
-                right: -100%;
-                width: 100%;
-                height: 100vh;
-                background-color: white;
-                flex-direction: column;
-                justify-content: flex-start;
-                padding-top: 5rem;
-                gap: 2rem;
-                transition: right 0.3s ease-in-out;
-                z-index: 1000;
-            }
-
-            .nav-links.active {
-                right: 0;
-            }
-
-            .nav-links a {
-                font-size: 1rem;
-                padding: 0.5rem 2rem;
-                width: 100%;
-            }
-
-            .auth-buttons {
-                display: none;
-            }
-
-            .hamburger, .close {
-                display: block;
-                cursor: pointer;
-                font-size: 1.5rem;
-            }
-
-            .close {
-                display: none;
-                position: absolute;
-                top: 1rem;
-                right: 2rem;
-            }
-
-            .nav-links.active .close {
-                display: block;
-            }
-
-            .nav-links.active .hamburger {
-                display: none;
-            }
-        }
     </style>
 </head>
+
 <body>
-    <nav class="navbar" id="navbar">
-        <a href="#" class="logo">GitBook</a>
-        <div class="nav-links" id="nav-links">
-            <a href="#">Solutions</a>
-            <a href="#">Integrations</a>
-            <a href="#">Resources</a>
-            <a href="#">Pricing</a>
-            <a href="#">Company</a>
+    <section class="skills-section">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/919/919827.png" alt="HTML 5">
+                <h3>HTML 5</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <div class="skill-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/919/919826.png" alt="CSS 3">
+                <h3>CSS 3</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <div class="skill-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/919/919828.png" alt="JavaScript">
+                <h3>JavaScript</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <div class="skill-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python">
+                <h3>Python</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <div class="skill-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/919/919831.png" alt="Sass">
+                <h3>Sass</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <div class="skill-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/919/919836.png" alt="MySQL">
+                <h3>MySQL</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
         </div>
-
-        <div class="auth-buttons">
-            <a href="#" class="login-btn">0706128329</a>
-        </div>
-
-        <div class="hamburger" id="hamburger">☰</div>
-        <div class="close" id="close">×</div>
-    </nav>
-
-    <script>
-        const hamburger = document.getElementById('hamburger');
-        const close = document.getElementById('close');
-        const navLinks = document.getElementById('nav-links');
-
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.add('active');
-        });
-
-        close.addEventListener('click', () => {
-            navLinks.classList.remove('active');
-        });
-    </script>
+    </section>
 </body>
+
 </html>

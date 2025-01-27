@@ -6,6 +6,8 @@
   box-sizing: border-box;
 }
 
+
+
 #loader {
   position: fixed;
   top: 0;
@@ -331,6 +333,73 @@ header {
   color: #ff9442;
 }
 
+
+
+.skills-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #28a745;
+  margin: 10px auto 0;
+}
+
+.skills-container {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.skill-card {
+  /* background: #3b3b3b; */
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  
+}
+
+
+
+.skill-card img {
+  margin-left: 85px;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.skill-card img:hover{
+  transform: translateY(-10px);
+}
+
+.skill-card h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #0c0a5d;
+}
+
+.skill-card p {
+  font-size: 1rem;
+  color: #4b5563;
+}
+
+
+/* 
 .choose {
   background-color: #f5f6f8;
 }
@@ -383,7 +452,7 @@ header {
   100% {
     width: var(--progress);
   }
-}
+} */
 
 .journey__grid {
   max-width: 900px;
