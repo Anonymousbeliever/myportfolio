@@ -1,6 +1,7 @@
 window.addEventListener("load", function () {
-  const loader = document.getElementById("loader");
-  loader.style.display = "none";
+  setTimeout(function () {
+      document.getElementById("loader").style.display = "none";
+  }, 3000);
 });
 
 
@@ -29,26 +30,27 @@ const scrollRevealOption = {
 ScrollReveal().reveal(".header__image img", {
   ...scrollRevealOption,
   origin: "right",
+  delay: 3000,
 });
 ScrollReveal().reveal(".header__content h2", {
   ...scrollRevealOption,
-  delay: 1000,
+  delay: 2900,
 });
 ScrollReveal().reveal(".header__content h1", {
   ...scrollRevealOption,
-  delay: 1500,
+  delay: 3000,
 });
 ScrollReveal().reveal(".header__content h3", {
   ...scrollRevealOption,
-  delay: 2000,
+  delay: 3500,
 });
 ScrollReveal().reveal(".header__content p", {
   ...scrollRevealOption,
-  delay: 2500,
+  delay: 4000,
 });
 ScrollReveal().reveal(".header__btns", {
   ...scrollRevealOption,
-  delay: 3000,
+  delay: 4500,
 });
 
 ScrollReveal().reveal(".intro__image", {
@@ -82,35 +84,6 @@ ScrollReveal().reveal(".intro__flex div", {
 });
 
 ScrollReveal().reveal(".journey__grid > div > div", {
-  ...scrollRevealOption,
-  interval: 500,
-});
-
-const mixer = mixitup(".portfolio__grid");
-
-ScrollReveal().reveal(".banner__content .section__header", {
-  ...scrollRevealOption,
-});
-ScrollReveal().reveal(".banner__content p", {
-  ...scrollRevealOption,
-  delay: 500,
-});
-ScrollReveal().reveal(".banner__btn", {
-  ...scrollRevealOption,
-  delay: 1000,
-});
-
-const swiper = new Swiper(".swiper", {
-  slidesPerView: 2,
-  spaceBetween: 50,
-  loop: true,
-
-  pagination: {
-    el: ".swiper-pagination",
-  },
-});
-
-ScrollReveal().reveal(".blog__card", {
   ...scrollRevealOption,
   interval: 500,
 });
