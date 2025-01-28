@@ -52,38 +52,3 @@ ScrollReveal().reveal(".header__btns", {
   ...scrollRevealOption,
   delay: 4500,
 });
-
-ScrollReveal().reveal(".intro__image", {
-  ...scrollRevealOption,
-  origin: "left",
-});
-ScrollReveal().reveal(".intro__content .section__subheader", {
-  ...scrollRevealOption,
-  delay: 500,
-});
-ScrollReveal().reveal(".intro__content .section__header", {
-  ...scrollRevealOption,
-  delay: 1000,
-});
-ScrollReveal().reveal(".intro__description", {
-  ...scrollRevealOption,
-  delay: 1500,
-});
-ScrollReveal().reveal(".intro__grid", {
-  ...scrollRevealOption,
-  delay: 2000,
-});
-ScrollReveal().reveal(".intro__content h4", {
-  ...scrollRevealOption,
-  delay: 2500,
-});
-ScrollReveal().reveal(".intro__flex div", {
-  ...scrollRevealOption,
-  delay: 3000,
-  interval: 500,
-});
-
-ScrollReveal().reveal(".journey__grid > div > div", {
-  ...scrollRevealOption,
-  interval: 500,
-});
