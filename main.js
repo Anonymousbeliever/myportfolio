@@ -21,6 +21,7 @@ navLinks.addEventListener("click", (e) => {
   menuBtnIcon.setAttribute("class", "ri-menu-line");
 });
 
+
 const scrollRevealOption = {
   distance: "50px",
   origin: "bottom",
