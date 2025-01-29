@@ -31,25 +31,21 @@ const scrollRevealOption = {
 ScrollReveal().reveal(".header__image img", {
   ...scrollRevealOption,
   origin: "right",
-  delay: 3000,
+  delay: 1200,
 });
 ScrollReveal().reveal(".header__content h2", {
   ...scrollRevealOption,
-  delay: 2900,
+  delay: 1200,
 });
 ScrollReveal().reveal(".header__content h1", {
   ...scrollRevealOption,
-  delay: 3000,
-});
-ScrollReveal().reveal(".header__content h3", {
-  ...scrollRevealOption,
-  delay: 3500,
+  delay: 1500,
 });
 ScrollReveal().reveal(".header__content p", {
   ...scrollRevealOption,
-  delay: 4000,
+  delay: 1700,
 });
 ScrollReveal().reveal(".header__btns", {
   ...scrollRevealOption,
-  delay: 4500,
+  delay: 2000,
 });
