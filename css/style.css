@@ -113,6 +113,8 @@ body {
   scroll-behavior: smooth;
   overflow-x: hidden;
   background: #f5f6f8;
+  height: 100%;
+  margin: 0;
   
 }
 
