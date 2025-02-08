@@ -91,7 +91,6 @@
   color: #000;
   background-color: transparent;
   box-shadow: 0 0 20px 10px #0cbd88;
-
 }
 
 img {
@@ -244,104 +243,6 @@ header {
   background-color: transparent;
 }
 
-/* .intro__container {
-  display: grid;
-  gap: 2rem;
-  overflow: hidden;
-} */
-/* 
-.intro__image {
-  position: relative;
-  isolation: isolate;
-  max-width: 350px;
-  margin-inline: auto;
-  padding: 4px;
-  overflow: hidden;
-}
-
-.intro__image::before {
-  position: absolute;
-  content: "";
-  height: 200%;
-  width: 10rem;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-35deg);
-  transform-origin: center center;
-  background-color: #ff9442;
-  z-index: -1;
-}
-
-.intro__image img {
-  background-color: #ffffff;
-} */
-
-/* .intro__content :is(.section__subheader, .section__header) {
-  text-align: center;
-}
-
-.intro__description {
-  margin-block: 1rem 2rem;
-  color:#4b5563;
-  line-height: 1.75rem;
-}
-
-.intro__grid {
-  margin-bottom: 2rem;
-  display: grid;
-  grid-template-columns: max-content max-content 1fr;
-  gap: 0.5rem 1rem;
-}
-
-.intro__grid h5 {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  font-size: 1rem;
-  font-weight: 500;
-  color: #030712;
-}
-
-.intro__grid h5 span {
-  font-size: 1.2rem;
-  color: #0cbd88;
-}
-
-.intro__grid > span {
-  color: #030712;
-}
-
-.intro__grid p {
-  color:#4b5563;
-}
-
-.intro__content h4 {
-  margin-bottom: 0.5rem;
-  font-size: 1.2rem;
-  font-weight: 600;
-  text-align: center;
-  color: #000;
-}
-
-.intro__flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-
-.intro__flex div {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-weight: 500;
-  color: #000;
-}
-
-.intro__flex span {
-  font-size: 1.5rem;
-  color: #0cbd88;
-} */
 
 /* About */
 .about-content{
@@ -372,6 +273,8 @@ header {
   flex: 0 0 100%;
   max-width: 100%;
   margin-top: 40px;
+  margin-left: 50px;
+  
 }
 
 .about-content .personal-info .row {
@@ -381,8 +284,8 @@ header {
 }
 
 .about-content .personal-info .info-item {
-  flex: 0 0 48%;
-  max-width: 48%;
+  flex: 0 0 30%;
+  max-width: 30%;
 }
 
 .about-content .personal-info .info-item p {
@@ -406,6 +309,7 @@ header {
     flex: 0 0 100%;
     max-width: 100%;
     text-align: left; /* Align text for better readability */
+    
   }
 }
 
@@ -651,76 +555,7 @@ h3.title {
 
 
 
-
-/* .journey__grid {
-  max-width: 900px;
-  margin-inline: auto;
-  margin-top: 4rem;
-  display: grid;
-  gap: 2rem;
-}
-
-.journey__grid > div {
-  display: grid;
-  gap: 1rem;
-}
-
-.journey__grid__header {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: #000;
-}
-
-.journey__card {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-}
-
-.journey__card > span {
-  position: relative;
-  isolation: isolate;
-  padding-inline: 2px;
-  height: 100%;
-  font-size: 1.2rem;
-  color: #0cbd88;
-}
-
-.journey__card > span::before {
-  position: absolute;
-  content: "";
-  height: 100%;
-  width: 2px;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #0cbd88;
-}
-
-.journey__card h4 {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #030712;
-}
-
-.journey__card h5 {
-  margin-bottom: 1rem;
-  font-size: 1rem;
-  font-weight: 500;
-  color:#4b5563;
-}
-
-.journey__card p {
-  color:#4b5563;
-} */
-
 /* service */
-.key-service {
-  padding-top: 200px;
-}
 
 .key-service h2 {
   text-align: center;
@@ -815,6 +650,19 @@ h3.title {
 
 }
 
+
+.Button {
+  display: inline-block;
+  background: #e80a0a;
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 30px;
+  border-top-right-radius: 0;
+  transition: 0.5s;
+}
+
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .col-3 {
@@ -830,10 +678,6 @@ h3.title {
 
 
 /* Testimanials */
-
-.testimanials {
-    padding-top: 200px;
-}
 
 .small-container {
   padding-top: 40px;
@@ -951,10 +795,6 @@ footer{
 }
 
 @media (width > 540px) {
-  /* .choose__grid {
-    grid-template-columns: repeat(2, 1fr);
-  } */
-
   .journey__grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1041,20 +881,7 @@ footer{
   .journey__grid {
     gap: 2rem 4rem;
   }
-
-  /* .service__grid {
-    grid-template-columns: repeat(3, 1fr);
-  } */
-
 }
-
-/* @media (width > 1024px) {
-  .service__grid {
-    gap: 4rem 1.5rem;
-  }
-
-
-} */
 
 /* /PROJECTS/ */
 
