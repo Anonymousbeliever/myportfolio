@@ -1068,8 +1068,8 @@ select:focus {
 /* Further adjustments for mobile screens */
 @media (max-width: 480px) {
   .contact {
-    padding-top: 60px;
-    padding: 20px; /* Reduce padding for smaller screens */
+    padding-top: 100px;
+  
   }
 
   .contact h2 {
