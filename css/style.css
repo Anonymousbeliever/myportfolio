@@ -556,6 +556,9 @@ h3.title {
 
 
 /* service */
+.key-service{
+  padding-top: 50px;
+}
 
 .key-service h2 {
   text-align: center;
@@ -678,6 +681,9 @@ h3.title {
 
 
 /* Testimanials */
+.testimanials{
+  padding-top: 50px;
+}
 
 .small-container {
   padding-top: 40px;
@@ -993,7 +999,7 @@ footer{
 
 .contact{
   background: #f5f6f8;
-  padding-top: 60px;
+  padding-top: 100px;
 }
 
 .contact h2{
