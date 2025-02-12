@@ -176,6 +176,8 @@ nav {
   display: none;
 }
 
+/* HEADER SECTION */
+
 header {
   background-color: #f5f6f8;
 }
@@ -240,8 +242,7 @@ header {
   background-color: transparent;
 }
 
-
-/* About */
+/* ABOUT SECTION */
 
 .about-section {
   text-align: center;
@@ -347,7 +348,7 @@ header {
 }
 
 
-/* stat section */
+/* STAT SECTION */
 
 h1 {
   font-size: 36px;
