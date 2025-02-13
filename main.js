@@ -5,34 +5,24 @@ window.addEventListener("load", function () {
 });
 
 
-// Gets the menu button element by its ID
-const menuBtn = document.getElementById("menu-btn");
 
-// Gets the navigation links container by its ID
-const navLinks = document.getElementById("nav-links");
-
-// Gets the <i> icon inside the menu button (for toggling between menu and close icons)
-const menuBtnIcon = menuBtn.querySelector("i");
+const menuBtn = document.getElementById("menu-btn");// Gets the menu button element by its ID
+const navLinks = document.getElementById("nav-links");// Gets the navigation links container by its ID
+const menuBtnIcon = menuBtn.querySelector("i");// Gets the <i> icon inside the menu button (for toggling between menu and close icons)
 
 // Adding a click event listener to the menu button
-menuBtn.addEventListener("click", (e) => {
-  // Toggle the "open" class on the navigation menu (show/hide the menu)
-  navLinks.classList.toggle("open");
+menuBtn.addEventListener("click", () => {
+ 
+  navLinks.classList.toggle("open"); // Toggle the "open" class on the navigation menu (show/hide the menu)
+  const isOpen = navLinks.classList.contains("open");// Check if the menu is open by checking if the "open" class exists
 
-  // Check if the menu is open by checking if the "open" class exists
-  const isOpen = navLinks.classList.contains("open");
-
-  // If the menu is open, show the "close" icon, otherwise show the "menu" icon
-  menuBtnIcon.setAttribute("class", isOpen ? "ri-close-line" : "ri-menu-line");
+  menuBtnIcon.setAttribute("class", isOpen ? "ri-close-line" : "ri-menu-line");// If the menu is open, show the "close" icon, otherwise show the "menu" icon
 });
 
-// Add a click event listener to the navigation links container
-navLinks.addEventListener("click", (e) => {
-  // When any link inside the navigation menu is clicked, close the menu
-  navLinks.classList.remove("open");
-
-  // Reset the menu button icon back to the "menu" icon
-  menuBtnIcon.setAttribute("class", "ri-menu-line");
+// Adding a click event listener to the navigation links container
+navLinks.addEventListener("click", () => {
+  navLinks.classList.remove("open"); // When any link inside the navigation menu is clicked, close the menu
+  menuBtnIcon.setAttribute("class", "ri-menu-line");// Reset the menu button icon back to the "menu" icon
 });
 
 
